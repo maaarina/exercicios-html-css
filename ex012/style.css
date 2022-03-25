@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* em HTML ID é representado por "#" em CSS
+    em HTML Class é representado por "." em CSS 
+        id = unico  class = multiplo*/
+
+body{
+    background-color: rgba(127, 255, 212, 0.815);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: rgb(3, 143, 38);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h2{
+    color: rgb(10, 209, 3);
+}
+
+.basico{
+    color: rgb(131, 33, 33);
+    font-weight: bolder;
+}
+
+.intermediario{
+    color: rgb(245, 65, 65);
+}
+
+.avancado{
+    color: rgb(240, 109, 109);
+}

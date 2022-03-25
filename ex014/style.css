@@ -1,0 +1,44 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightgreen;
+    margin: 0px;
+}
+header{
+    background-color: lightcyan;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color:wheat
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 6px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    color: black;
+}
+main{
+    background-color: lightcyan;
+    padding: 10px;
+    margin: 10px;
+}
+article{
+    background-color: rgb(206, 228, 228);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.616); 
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 1px;
+}
+article > aside{
+    background-color: rgb(200, 180, 288);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
