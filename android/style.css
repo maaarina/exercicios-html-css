@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('..fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+
+
+ /*é uma pseudoclasse que permite fazer alterações globais*/
+
+:root{
+    --cor1:#c5ebd6;
+    --cor2:#83e1ad;
+    --cor3:#3ddc84;
+    --cor4:#2fa866;
+    --cor5:#1a5c37;
+    --cor6:#063d1e;
+
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #c5ebd6;
+    font-family: var(--font-padrão);
+}
+
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*identar o início do paragrafo*/
+    line-height: 1.5em;
+}
+
+header{
+    min-height: 150px;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+}
+
+header > p{
+    font-family: var(--font-padrão);
+    font-size: 1.2em;
+    font-weight: 30px;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    color: white;
+    font-family:var(--font-destaque);
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav{
+    background-color: var(--cor6);
+    padding: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.63);
+}
+
+nav a{
+    color: white;
+    padding:10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--cor5);
+    color: var(--cor2);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.466);
+    background-color: white;
+}
+
+main strong{
+    color: #1a5c37;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2fa866;
+    background-color: #c5ebd6;
+    padding: 3px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #1a5c37;
+}
+
+main img{
+    width: 100%;
+    /*deixando a largura da imagem em 100% vai fazer com que elas se espremam e se adaptem de acordo com o tamanho da tela*/
+}
+
+main img.bugdroid{
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    /*para centralizar imagens em um site é preciso usar a tag 'display block' pois uma imagem não é considerada um bloco, usando display block fica possivel utilizar a 'margin auto'*/
+}
+
+main h1{
+    color:#063d1e ;
+    font-family: var(--font-android);
+}
+
+main h2{
+    font-family: var(--font-android);
+    color: #1a5c37;
+    background-image: linear-gradient(to right, var(--cor1) , transparent);
+    text-indent: 9px;
+}
+
+/*margin: 0px -20px 30px -20px; 0px 0px 30px 5px*/
+
+div.video {
+    position: relative;
+    width: 100%;
+    padding: -20px;
+    padding-bottom: 56.5%;
+    
+    margin:  0px 35px 30px -50px;
+}
+
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    border: none;
+} 
+
+aside{
+    background-color: #c5ebd6;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #1a5c378c;
+}
+
+aside h3{
+    background-color: #83e1ad;
+    padding: 8px;
+    text-indent: 6px;
+    border-radius: 10px;
+}
+
+aside ul{
+    margin-left: 30px;
+    list-style-type: '\2714\00A0'; /*list-style-type define o tipo da lista. é possivel exportar outros tipos usando o codigo. Já o 00A0 define um espaço sem quebras entre o tipo e o conteudo da li*/
+    columns: 2; /* define quantas colunas a lista será dividida*/
+}
+
+footer{
+    background-color:var(--cor6);
+    color: white
+}
+
+footer p{
+    text-align: center;
+}
