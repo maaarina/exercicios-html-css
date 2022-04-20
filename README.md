@@ -1,2 +1,2 @@
-# html-css
- exercícios e projetos nos estudos de HTML e CSS
+#HTML e CSS
+ Meus exercícios do curso básico de HTML e CSS.
