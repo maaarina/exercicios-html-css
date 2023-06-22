@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mídias em HTML 5</title>
 </head>
+
 <body>
     <h1>Imagens dinâmicas</h1>
-    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
 
     <picture>
-        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- caso a imagem chegar a um tamanho menor que 150px a imagem P será carregada -->
-        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!-- se a imagem chegar a um tamnho menor que 1000px a imagem M será carregada -->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- caso a imagem chegar a um tamanho menor que 150px a imagem P será carregada -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <!-- se a imagem chegar a um tamnho menor que 1000px a imagem M será carregada -->
         <img src="imagens/foto-g.png" alt="imagem-flexível">
     </picture>
 
-<p>a tag <strong>< picture></strong> é usada para definir mais de uma fonte de imagem, que normalmente é usada para definir o tamanho da tela; Ela é usada juntamente da tag < img> que irá agrupar com outras opções de <strong>source</strong>.
-    <br>
-    <em>media</em>: "largura minima" de 1050px, (se a imagem tiver a largura minima de 1050px...) <em>srcset</em>: "foto-x", (...a foto-x será carregada no lugar da anterior) <em>Type</em>=image/png: tipo de imagem. </p>
+    <p>a tag <strong>picture</strong> é usada para definir mais de uma fonte de imagem, que normalmente é usada para definir o tamanho da tela; Ela é usada juntamente da tag img que irá agrupar com outras opções de <strong>source</strong>.
+    <br> 
+    <em>media</em>: "largura minima" de 1050px, (se a imagem tiver a largura minima de 1050px...)
+    <em>srcset</em>: "foto-x", (...a foto-x será carregada no lugar da anterior) <em>Type</em>=image/png: tipo de imagem. 
+    </p>
+
     <br>
 
     <h1>Reproduzindo audios</h1>
     <p>Vamos aprender a reproduzir audios dentro de um site em HTML5</p>
+
     <audio src="mídia/Vespers on the Shore - The Mini Vandals.mp3" controls autoplay></audio>
-    <audio> 
-        <source src="mídia/Born a Rockstar - NEFFEX.mp3" Type="audio/mpeg">
+    <audio>
+    <source src="mídia/Born a Rockstar - NEFFEX.mp3" Type="audio/mpeg">
         <!--tipos de arquivos de audio> mp3(/mpeg), wav, ogg-->
     </audio>
+
     <br>
 
     <h1>Vídeos no navegador</h1>
     <video width="300px" poster="#" controls autoplay>
         <source src="mídia/pexels-serkan-bayraktar-8214649.mp4" type="video/mp4">
     </video>
+
     <p>
-        <ol type="i">
-            <li>width: vai indicar a largaura que o vídeo aparecerá na tela.</li>
-            <li>poster: configura uma imagem que irá aparecer na capa enquanto o visitante não aperta o play</li> <!--neste caso eu nao coloquei-->
-            <li>controls: vai configurar se os controles de vídeo aparecerão na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a tag <em>controls</em> na tag video </li>
-            <li>dis para o navegador que o video irá tocar automaticamente assim que a página for carregada</li>
-        </ol>
+    <ol type="i">
+        <li>width: vai indicar a largaura que o vídeo aparecerá na tela.</li>
+        <li>poster: configura uma imagem que irá aparecer na capa enquanto o visitante não aperta o play</li>
+        <!--neste caso eu nao coloquei-->
+        <li>controls: vai configurar se os controles de vídeo aparecerão na parte inferior da mídia. Por padrão, os
+            controles não aparecerão, mas basta colocar a tag <em>controls</em> na tag video </li>
+        <li>dis para o navegador que o video irá tocar automaticamente assim que a página for carregada</li>
+    </ol>
     </p>
+
     <h1>Formatos dos videos</h1>
-    <p>Os formatos suportados são MPEG, WEBM e OGG, sendo os dois primeiros os que possuem mais compatibilidade com a  maioria dos navegadores.        
-    </p> 
+    <p>Os formatos suportados são MPEG, WEBM e OGG, sendo os dois primeiros os que possuem mais compatibilidade com a
+        maioria dos navegadores.
+    </p>
     <!-- um conversor de video para gerar arquivos em varios formatos: HandBreak.-->
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/DjOSM72cYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <p>essa é uma outra forma de colocar um vídeo no navegador, sendo esta a melhor alternativa pois um video pode ocupadar muito espaço hospedar um video no próprio site e utilizar muitas GBs de tráfego, deixando o site lento. No YouTube é possivel gerar um código pronto, clicando em compartilhar>incorporar, assim, será gerado o código pronto que vcocê poderá configurar de acordo com suas necessidades.
     </p>
-
 
 </body>
 </html>
