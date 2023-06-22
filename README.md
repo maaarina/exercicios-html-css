@@ -1,4 +1,4 @@
-Este repositório contém exercícios feitos no curso de <strong> HTML5 e CSS3</strong> do (curso em vídeo)[https://www.cursoemvideo.com] onde tive meu primeiro contato com códigos, então são exercícios básicos.
+Este repositório contém exercícios feitos no curso de <strong> HTML5 e CSS3</strong> do [curso em video](https://www.cursoemvideo.com) onde tive meu primeiro contato com códigos, então são exercícios básicos.
 
 ## O que aprendi?
 Estes são alguns do assuntos que aprendi abordados no curso:
